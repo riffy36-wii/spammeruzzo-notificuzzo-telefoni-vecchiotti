@@ -11,5 +11,6 @@
 <br>
 <br>
 
-<button onclick="Notification.requestPermission();setInterval(()=>navigator.serviceWorker.getRegistration().then(r=>r.showNotification('Esplodi',{body:'Aiutoooo mi sta andando a fuoco il telefono e è esplosa pure la batteria santo fuffolo!'})),Math.random()*1600)">ESPLODI</button>
+<button onclick="Notification.requestPermission();setTimeout(()=>{navigator.serviceWorker.getRegistration().then(r=>r.showNotification('Esplodi',{body:'Aiutoooo mi sta andando a fuoco il telefono e è esplosa pure la batteria santo fuffolo!'}));arguments.callee()},Math.random()*2000)">ESPLODI</button>
+
 
