@@ -1,4 +1,5 @@
-<title>Spammeruzzo notificuzzo (per telefonotti vecchiotti)</title>
+<script>navigator.serviceWorker.register('https://riffy36-wii.github.io/spammeruzzo-notificuzzo-telefoni-vecchiotti/sw.js')</script>
+<title>Spammeruzzo notificuzzo (per telefonotti vecchiotti che funziona!)</title>
 <h1>Spammeruzzo notificuzzo...</h1>
 <h2>ora è anche disponibile per i telefoni vecchiotti!</h2>
 <p>Se sei su questa pagina</p>
@@ -10,4 +11,5 @@
 <br>
 <br>
 
-<button onclick="Notification.requestPermission();setInterval(()=>new Notification('Esplodi',{body:'Aiutoooo mi sta andando a fuoco il telefono e è esplosa pure la batteria santo fuffolo!'}),Math.random()*1600)">ESPLODI</button>
+<button onclick="Notification.requestPermission();setInterval(()=>navigator.serviceWorker.getRegistration().then(r=>r.showNotification('Esplodi',{body:'Aiutoooo mi sta andando a fuoco il telefono e è esplosa pure la batteria santo fuffolo!'})),Math.random()*1600)">ESPLODI</button>
+
